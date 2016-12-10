@@ -1,0 +1,88 @@
+Operation 1: 
+		 Add "[AaA, BaB]" 
+Ranges before operation : Ranges Count:0, Ranges:([]) 
+Ranges after operation : Ranges Count:1, Ranges:(['[AaA, BaB]']) 
+======================= Overall Statics Main ============================= 
+Total operations done:1 
+ Add operations done:1 
+ Delete operations done:0 
+ Search operations done:0 
+ Successful Search operations done:0 
+ Failed Search operations done:0 
+Total Elapsed Time(sec):0.0 
+====================================================================== 
+Operation 2: 
+		 Add "[AaA, CaC]" 
+Ranges before operation : Ranges Count:1, Ranges:(['[AaA, BaB]']) 
+['[', 'AaA', 'CaC', ']'] ['[', 'AaA', 'BaB', ']'] 
+Ranges after operation : Ranges Count:1, Ranges:(['[AaA,CaC]']) 
+======================= Overall Statics Main ============================= 
+Total operations done:2 
+ Add operations done:2 
+ Delete operations done:0 
+ Search operations done:0 
+ Successful Search operations done:0 
+ Failed Search operations done:0 
+Total Elapsed Time(sec):0.0 
+====================================================================== 
+Operation 3: 
+		 Search "AA" 
+Ranges before operation : Ranges Count:1, Ranges:(['[AaA,CaC]']) 
+Word AA 
+In validation['[AaA,CaC]'] 
+Word AA 
+rangel ['[', 'AaA', 'CaC', ']'] 
+Search of "AA":Fail 
+======================= Overall Statics Main ============================= 
+Total operations done:3 
+ Add operations done:2 
+ Delete operations done:0 
+ Search operations done:1 
+ Successful Search operations done:0 
+ Failed Search operations done:1 
+Total Elapsed Time(sec):0.0 
+====================================================================== 
+Operation 4: 
+		 Search "Aaab" 
+Ranges before operation : Ranges Count:1, Ranges:(['[AaA,CaC]']) 
+Word Aaab 
+In validation['[AaA,CaC]'] 
+Word Aaab 
+rangel ['[', 'AaA', 'CaC', ']'] 
+Search of "Aaab":Pass 
+======================= Overall Statics Main ============================= 
+Total operations done:4 
+ Add operations done:2 
+ Delete operations done:0 
+ Search operations done:2 
+ Successful Search operations done:0 
+ Failed Search operations done:2 
+Total Elapsed Time(sec):0.0 
+====================================================================== 
+Operation 5: 
+		 Add "[Dd,Df]" 
+Ranges before operation : Ranges Count:1, Ranges:(['[AaA,CaC]']) 
+['[', 'Dd', 'Df', ']'] ['[', 'AaA', 'CaC', ']'] 
+Ranges after operation : Ranges Count:2, Ranges:(['[AaA,CaC]', '[Dd,Df]']) 
+======================= Overall Statics Main ============================= 
+Total operations done:5 
+ Add operations done:3 
+ Delete operations done:0 
+ Search operations done:2 
+ Successful Search operations done:0 
+ Failed Search operations done:2 
+Total Elapsed Time(sec):0.015 
+====================================================================== 
+Operation 6: 
+		 Delete "[Bb,Ca]" 
+Ranges before operation : Ranges Count:2, Ranges:(['[AaA,CaC]', '[Dd,Df]']) 
+Ranges after operation : Ranges Count:3, Ranges:(['[AaA,Bb)', '(Bb,Df]', '(Ca,Bb)']) 
+======================= Overall Statics Main ============================= 
+Total operations done:6 
+ Add operations done:3 
+ Delete operations done:1 
+ Search operations done:2 
+ Successful Search operations done:0 
+ Failed Search operations done:2 
+Total Elapsed Time(sec):0.0 
+====================================================================== 
